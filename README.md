@@ -1,5 +1,7 @@
 # twitterstats
-Collect Statistics from Twitter Posts
+Collect Statistics from Twitter Posts. In particular it counts likes of posts over time.
+The reason for creating this app was that there is a strong suspicion that likes on some major posts are systematically deleted or that there is a major unresolved bug which prevents new likes from being recorded.
+Some data collected using the app is provided in the example folder. In order to display it use gnuplot or pyplot or similar: You need to sort by tweetid and parse the UTC timestamp properly. 
 
 Usage:
 
