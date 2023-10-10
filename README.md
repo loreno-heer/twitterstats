@@ -13,8 +13,7 @@ Usage:
 ## Plotting in R
 this should work for example after importing the csv
 ```R
-sample2 = sampledata1[sampledata1$TweetID == 1711037543708230057,]
-data <- data.frame(sample2$Datetime, sample2$Likes)
-data$sample2.Datetime <- as.POSIXct(data$sample2.Datetime, format="%Y-%m-%d %H:%M:%S")
-plot(data)
+data1 <- read.csv("~/data1.csv")
+data1$Datetime <- as.POSIXct(data1$Datetime, format="%Y-%m-%d %H:%M:%S")
+plot(data1[data1$TweetID == 1674360288445964288,][,c("Datetime","Likes")])
 ```
